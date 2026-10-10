@@ -1,0 +1,233 @@
+{
+  "schoolInfo": {
+    "name": "TRƯỜNG THPT CHUYÊN LÊ QUÝ ĐÔN",
+    "subTitle": "PHÒNG TRUYỀN THỐNG & DI SẢN HỌC THUẬT",
+    "motto": "VERITAS ET SCIENTIA • CHÂN LÝ VÀ TRI THỨC",
+    "establishedYear": 1956,
+    "description": "Không gian lưu giữ những mốc son lịch sử, kỷ vật vô giá và ký ức của các thế hệ thầy trò qua hơn nửa thế kỷ phụng sự sự nghiệp giáo dục.",
+    "principalMessage": "Phòng truyền thống không chỉ là nơi lưu giữ quá khứ, mà là ngọn đuốc thắp sáng lý tưởng, lòng tự hào và trách nhiệm của mỗi thế hệ học sinh hôm nay và mai sau."
+  },
+  "milestones": [
+    {
+      "id": "1",
+      "year": "1956",
+      "title": "Đặt viên gạch đầu tiên",
+      "description": "Thành lập trường với 4 lớp học đơn sơ bằng mái tranh tre, tập hợp những nhà giáo tâm huyết từ khắp mọi miền.",
+      "category": "Thành Lập",
+      "imageUrl": "https://images.unsplash.com/photo-1541829070764-84a7d30dd3f3?auto=format&fit=crop&w=800&q=80"
+    },
+    {
+      "id": "2",
+      "year": "1972",
+      "title": "Lớp học thời khói lửa",
+      "description": "Thầy và trò sơ tán về vùng nông thôn, vừa đào hầm trú ẩn vừa giảng dạy dưới ánh đèn dầu, duy trì mạch tri thức liên tục.",
+      "category": "Kháng Chiến",
+      "imageUrl": "https://images.unsplash.com/photo-1497633762265-9d179a990aa6?auto=format&fit=crop&w=800&q=80"
+    },
+    {
+      "id": "3",
+      "year": "1990",
+      "title": "Chuyển mình sang thời kỳ Đổi Mới",
+      "description": "Khánh thành dãy phòng học cao tầng đầu tiên và phòng thí nghiệm thực hành vật lý - hóa học hiện đại.",
+      "category": "Phát Triển",
+      "imageUrl": "https://images.unsplash.com/photo-1562774053-701939374585?auto=format&fit=crop&w=800&q=80"
+    },
+    {
+      "id": "4",
+      "year": "2006",
+      "title": "Kỷ niệm 50 năm & Đón nhận Huân chương",
+      "description": "Vinh dự đón nhận Huân chương Lao động Hạng Nhất do Nhà nước trao tặng vì những cống hiến vượt bậc.",
+      "category": "Vinh Danh",
+      "imageUrl": "https://images.unsplash.com/photo-1523050854058-8df90110c9f1?auto=format&fit=crop&w=800&q=80"
+    },
+    {
+      "id": "5",
+      "year": "2026",
+      "title": "Kỷ nguyên số & Hội nhập quốc tế",
+      "description": "Ra mắt Bảo tàng số truyền thống và hệ thống phòng thí nghiệm STEM - Trí tuệ nhân tạo liên kết với các đại học quốc tế.",
+      "category": "Hiện Đại",
+      "imageUrl": "https://images.unsplash.com/photo-1524178232363-1fb2b075b655?auto=format&fit=crop&w=800&q=80"
+    }
+  ],
+  "artifacts": [
+    {
+      "id": "art-1",
+      "title": "Chiếc chuông đồng niên khóa 1956",
+      "donor": "Thầy Hiệu trưởng đầu tiên Nguyễn Văn An",
+      "year": "1956",
+      "room": "Phòng Hiện Vật Lịch Sử - Tủ số 01",
+      "description": "Tiếng chuông đồng đã điểm những tiết học đầu tiên của trường, vượt qua mưa bom bão đạn và chứng kiến sự trưởng thành của 68 khóa học trò.",
+      "tags": ["Lịch sử", "Chuông trường", "Biểu tượng"],
+      "imageUrl": "https://images.unsplash.com/photo-1577495508048-b635879837f1?auto=format&fit=crop&w=800&q=80",
+      "category": "bieu-tuong",
+      "status": "approved",
+      "viewCount": 1420,
+      "likeCount": 312,
+      "createdAt": "2026-01-10T08:00:00.000Z",
+      "updatedAt": "2026-03-15T09:30:00.000Z"
+    },
+    {
+      "id": "art-2",
+      "title": "Sổ học bạ và Giáo án viết tay thời sơ tán",
+      "donor": "Cô giáo Đỗ Thị Mai (Cựu giáo viên Văn)",
+      "year": "1968",
+      "room": "Gian Kỷ Vật Chiến Tranh",
+      "description": "Những trang giấy ố vàng được viết cẩn thận bằng mực tím, ghi lại nhận xét tỉ mỉ từng em học sinh cùng sơ đồ hầm trú bom cạnh lớp.",
+      "tags": ["Giáo án", "Tư liệu quý", "Bản gốc"],
+      "imageUrl": "https://images.unsplash.com/photo-1455390582262-044cdead277a?auto=format&fit=crop&w=800&q=80",
+      "category": "khang-chien",
+      "status": "approved",
+      "viewCount": 980,
+      "likeCount": 245,
+      "createdAt": "2026-01-12T08:00:00.000Z",
+      "updatedAt": "2026-03-20T10:15:00.000Z"
+    },
+    {
+      "id": "art-3",
+      "title": "Cờ Luân lưu 'Dạy tốt - Học tốt' Toàn miền Bắc",
+      "donor": "Công đoàn nhà trường",
+      "year": "1978",
+      "room": "Phòng Khánh Tiết",
+      "description": "Lá cờ nhung thêu chỉ vàng ghi dấu thành tích dẫn đầu khối trường trung học phổ thông trong phong trào thi đua cả nước.",
+      "tags": ["Khen thưởng", "Thi đua", "Hiện vật gốc"],
+      "imageUrl": "https://images.unsplash.com/photo-1532649538693-f3a2ec1bf8bd?auto=format&fit=crop&w=800&q=80",
+      "category": "giai-thuong",
+      "status": "approved",
+      "viewCount": 840,
+      "likeCount": 198,
+      "createdAt": "2026-01-15T08:00:00.000Z",
+      "updatedAt": "2026-03-22T14:00:00.000Z"
+    },
+    {
+      "id": "art-4",
+      "title": "Bộ sưu tập Huy chương Olympic Quốc tế",
+      "donor": "Các thế hệ cựu học sinh chuyên Toán - Lý - Hóa",
+      "year": "1995 - 2024",
+      "room": "Bảng Vàng Danh Dự",
+      "description": "Gồm 12 huy chương Vàng, Bạc, Đồng trong các kỳ thi IMO, IPhO, IChO được các cựu học sinh trao tặng lại nhà trường làm động lực cho thế hệ sau.",
+      "tags": ["Olympic", "Huy chương", "Tự hào"],
+      "imageUrl": "https://images.unsplash.com/photo-1618005182384-a83a8bd57fbe?auto=format&fit=crop&w=800&q=80",
+      "category": "giai-thuong",
+      "status": "approved",
+      "viewCount": 2150,
+      "likeCount": 654,
+      "createdAt": "2026-01-18T08:00:00.000Z",
+      "updatedAt": "2026-04-01T11:20:00.000Z"
+    },
+    {
+      "id": "art-5",
+      "title": "Bút máy Kim Tinh và Sổ tay chấm thi của Thầy Hiệu trưởng",
+      "donor": "Gia đình Nhà giáo Ưu tú Nguyễn Văn An",
+      "year": "1965",
+      "room": "Gian Tưởng Niệm Thầy Cô",
+      "description": "Cây bút máy Kim Tinh ngòi vàng gắn bó suốt 20 năm công tác của thầy, từng ký quyết định khen thưởng cho hàng nghìn học sinh xuất sắc.",
+      "tags": ["Bút máy", "Kỷ vật thầy cô", "Bút tích"],
+      "imageUrl": "https://images.unsplash.com/photo-1583485088034-697b5bc54ccd?auto=format&fit=crop&w=800&q=80",
+      "category": "ky-vat-thay-co",
+      "status": "approved",
+      "viewCount": 760,
+      "likeCount": 182,
+      "createdAt": "2026-02-01T08:00:00.000Z",
+      "updatedAt": "2026-03-25T16:00:00.000Z"
+    },
+    {
+      "id": "art-6",
+      "title": "Ảnh kỷ yếu đen trắng Lớp 10A Khóa 1 (1956 - 1959)",
+      "donor": "Hội Cựu học sinh Khóa 1",
+      "year": "1959",
+      "room": "Hành Lang Ký Ức Niên Khóa",
+      "description": "Bức ảnh chụp 32 học sinh đầu tiên tốt nghiệp của trường dưới gốc bàng sân trường cũ, minh chứng sống động cho tinh thần hiếu học thời kỳ đầu.",
+      "tags": ["Ảnh kỷ yếu", "Khóa 1", "Tư liệu lịch sử"],
+      "imageUrl": "https://images.unsplash.com/photo-1577896851231-70ef18881754?auto=format&fit=crop&w=800&q=80",
+      "category": "hinh-anh-lop-hoc",
+      "status": "approved",
+      "viewCount": 1320,
+      "likeCount": 420,
+      "createdAt": "2026-02-10T08:00:00.000Z",
+      "updatedAt": "2026-04-02T13:40:00.000Z"
+    },
+    {
+      "id": "art-7",
+      "title": "Hòm thư lưu niệm và Nhật ký lớp học niên khóa 1985",
+      "donor": "Tập thể Cựu học sinh Niên khóa 1982 - 1985",
+      "year": "1985",
+      "room": "Gian Tiếp Nhận Số Hóa Mới",
+      "description": "Chiếc hòm thư gỗ thông chứa đựng hàng trăm lá thư tay, bài thơ và ước mơ tuổi học trò được niêm phong tròn 40 năm trước khi trao tặng lại trường.",
+      "tags": ["Thư tay", "Nhật ký", "Kỷ niệm tuổi trẻ"],
+      "imageUrl": "https://images.unsplash.com/photo-1520072959219-c595dc870360?auto=format&fit=crop&w=800&q=80",
+      "category": "dong-gop",
+      "status": "approved",
+      "viewCount": 650,
+      "likeCount": 210,
+      "createdAt": "2026-02-20T08:00:00.000Z",
+      "updatedAt": "2026-04-03T17:10:00.000Z"
+    }
+  ],
+  "guestbook": [
+    {
+      "id": "gb-1",
+      "name": "GS. TS. Trần Hoàng Minh",
+      "alumniClass": "Cựu học sinh Khóa 1980 - 1983",
+      "role": "Viện trưởng Viện Khoa học Tự nhiên",
+      "date": "10/03/2026",
+      "message": "Trở về thăm trường sau 40 năm, ngắm nhìn chiếc chuông cũ và hàng phượng vĩ, lòng rưng rưng nhớ công ơn người thầy xưa. Nền tảng tri thức và nhân cách được tôi luyện ở mái trường này đã nâng bước chúng em đi khắp năm châu.",
+      "approved": true,
+      "status": "approved",
+      "likeCount": 89,
+      "createdAt": "2026-03-10T08:00:00.000Z",
+      "updatedAt": "2026-03-10T08:00:00.000Z"
+    },
+    {
+      "id": "gb-2",
+      "name": "Bác sĩ Lê Quỳnh Anh",
+      "alumniClass": "Niên khóa 2002 - 2005",
+      "role": "Bệnh viện Bạch Mai",
+      "date": "15/03/2026",
+      "message": "Cảm ơn các thầy cô đã gìn giữ phòng truyền thống trang trọng và xúc động như thế này. Đọc lại từng trang lưu bút thấy thanh xuân của bao thế hệ như ùa về.",
+      "approved": true,
+      "status": "approved",
+      "likeCount": 54,
+      "createdAt": "2026-03-15T09:12:00.000Z",
+      "updatedAt": "2026-03-15T09:12:00.000Z"
+    },
+    {
+      "id": "gb-3",
+      "name": "Nguyễn Hoàng Nam",
+      "alumniClass": "Lớp 12 Chuyên Anh (2023 - 2026)",
+      "role": "Học sinh hiện tại",
+      "date": "02/04/2026",
+      "message": "Mỗi lần bước vào phòng truyền thống trường mình, em càng cảm thấy tự hào và quyết tâm đạt thành tích cao nhất trong kỳ thi đại học sắp tới để ghi danh vào bảng vàng của trường!",
+      "approved": true,
+      "status": "approved",
+      "likeCount": 38,
+      "createdAt": "2026-04-02T14:30:00.000Z",
+      "updatedAt": "2026-04-02T14:30:00.000Z"
+    }
+  ],
+  "teachers": [
+    {
+      "id": "t-1",
+      "name": "Nhà giáo Ưu tú Nguyễn Văn An",
+      "period": "1956 - 1975",
+      "role": "Hiệu trưởng sáng lập",
+      "bio": "Người thầy đặt nền móng với triết lý 'Kỷ cương là danh dự, Tri thức là sức mạnh'. Cả đời tận tụy vì sự nghiệp giáo dục.",
+      "imageUrl": "https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?auto=format&fit=crop&w=600&q=80"
+    },
+    {
+      "id": "t-2",
+      "name": "Nhà giáo Nhân dân PGS.TS Lê Thị Thu Cúc",
+      "period": "1985 - 2010",
+      "role": "Tổ trưởng Tổ Toán - Tin học",
+      "bio": "Người truyền lửa đào tạo hơn 40 học sinh đoạt giải Quốc gia và Quốc tế, tác giả nhiều tài liệu bồi dưỡng học sinh giỏi kinh điển.",
+      "imageUrl": "https://images.unsplash.com/photo-1573496359142-b8d87734a5a2?auto=format&fit=crop&w=600&q=80"
+    },
+    {
+      "id": "t-3",
+      "name": "Thầy Bùi Hoàng Long",
+      "period": "2015 - Nay",
+      "role": "Hiệu trưởng đương nhiệm",
+      "bio": "Tiên phong chuyển đổi số trong giáo dục phổ thông, phát triển chương trình liên kết học thuật quốc tế và bảo tồn di sản học đường.",
+      "imageUrl": "https://images.unsplash.com/photo-1500648767791-00dcc994a43e?auto=format&fit=crop&w=600&q=80"
+    }
+  ]
+}

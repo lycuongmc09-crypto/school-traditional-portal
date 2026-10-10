@@ -1,0 +1,160 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  body {
+    background-color: #FAF7F2;
+    color: #1A1615;
+    font-family: var(--font-be-vietnam), 'Be Vietnam Pro', system-ui, sans-serif;
+    -webkit-font-smoothing: antialiased;
+    text-rendering: optimizeLegibility;
+  }
+
+  h1, h2, h3, h4, h5, h6 {
+    font-family: var(--font-playfair), var(--font-cormorant), 'Playfair Display', Georgia, serif;
+    letter-spacing: -0.015em;
+    font-weight: 700;
+  }
+}
+
+/* Gradients */
+.crimson-gradient {
+  background: linear-gradient(135deg, #4E0A14 0%, #801424 45%, #A51C30 80%, #70111E 100%);
+}
+
+.crimson-velvet {
+  background: radial-gradient(circle at 50% 20%, #801424 0%, #4E0A14 60%, #2A050A 100%);
+}
+
+.gold-gradient {
+  background: linear-gradient(135deg, #FBF5E6 0%, #DFB15B 35%, #C29B38 70%, #A37E26 100%);
+}
+
+.gold-foil-text {
+  background: linear-gradient(135deg, #ECC876 0%, #C29B38 45%, #916E1D 70%, #DFB15B 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+/* Textures */
+.paper-texture {
+  background-color: #FAF7F2;
+  background-image: 
+    radial-gradient(#E5DCD0 0.85px, transparent 0.85px),
+    radial-gradient(#EBE3D7 0.85px, #FAF7F2 0.85px);
+  background-size: 24px 24px;
+  background-position: 0 0, 12px 12px;
+}
+
+.parchment-pattern {
+  background-color: #F4EEE3;
+  background-image: 
+    radial-gradient(circle at 100% 150%, #FAF7F2 24%, #F4EEE3 25%, #F4EEE3 28%, #FAF7F2 29%, #FAF7F2 36%, #F4EEE3 36%, #F4EEE3 40%, transparent 40%, transparent),
+    radial-gradient(circle at 0 150%, #FAF7F2 24%, #F4EEE3 25%, #F4EEE3 28%, #FAF7F2 29%, #FAF7F2 36%, #F4EEE3 36%, #F4EEE3 40%, transparent 40%, transparent);
+  background-size: 80px 80px;
+}
+
+/* Museum Showcase & Vitrine Effect */
+.museum-vitrine {
+  position: relative;
+  background: #1A1615;
+  border: 1px solid #C29B38;
+  box-shadow: 
+    0 20px 45px -15px rgba(26, 22, 21, 0.45),
+    inset 0 1px 1px rgba(255, 255, 255, 0.2),
+    inset 0 -1px 1px rgba(0, 0, 0, 0.6);
+  border-radius: 2px;
+  overflow: hidden;
+}
+
+.museum-vitrine::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background: linear-gradient(135deg, rgba(255, 255, 255, 0.15) 0%, rgba(255, 255, 255, 0.03) 30%, transparent 50%);
+  pointer-events: none;
+  z-index: 10;
+}
+
+/* Brass Plaque Nameplate */
+.brass-plaque {
+  background: linear-gradient(180deg, #F9F3E3 0%, #E8D6AC 20%, #C29B38 65%, #9E7B23 100%);
+  color: #2D200A;
+  border: 1px solid #846518;
+  box-shadow: 
+    inset 0 1px 0 rgba(255, 255, 255, 0.6),
+    inset 0 -1px 0 rgba(0, 0, 0, 0.3),
+    0 2px 4px rgba(0, 0, 0, 0.25);
+  text-shadow: 0 1px 0 rgba(255, 255, 255, 0.4);
+}
+
+/* Academic Double Frame Border */
+.academic-frame {
+  position: relative;
+  border: 1px solid #D8C7A5;
+  outline: 1px solid #A51C30;
+  outline-offset: -5px;
+}
+
+/* Subtle Scrollbar */
+::-webkit-scrollbar {
+  width: 8px;
+  height: 8px;
+}
+::-webkit-scrollbar-track {
+  background: #F4EEE3;
+}
+::-webkit-scrollbar-thumb {
+  background: #C29B38;
+  border-radius: 4px;
+}
+::-webkit-scrollbar-thumb:hover {
+  background: #A51C30;
+}
+
+/* Vietnamese Typography Readability & WCAG AAA Enhancements */
+body, p, li, input, textarea {
+  line-height: 1.75;
+  letter-spacing: 0.01em;
+}
+
+/* Senior Alumni / Teachers Accessibility Font Scaling */
+html[data-font-size="large"] {
+  font-size: 112.5%; /* 18px base */
+}
+
+html[data-font-size="xlarge"] {
+  font-size: 125%; /* 20px base */
+}
+
+/* Traditional Red Wax Seal Micro-interaction */
+.wax-seal {
+  width: 72px;
+  height: 72px;
+  border-radius: 50%;
+  background: radial-gradient(circle at 35% 35%, #C92A3E 0%, #A51C30 50%, #6E0D1B 100%);
+  border: 2px dashed #E8B4B8;
+  box-shadow: 0 4px 10px rgba(110, 13, 27, 0.4), inset 0 2px 4px rgba(255, 255, 255, 0.35);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  color: #FFF;
+  text-transform: uppercase;
+  font-weight: 700;
+  text-align: center;
+  transform: rotate(-10deg);
+  animation: seal-stamp 0.4s cubic-bezier(0.175, 0.885, 0.32, 1.275) forwards;
+}
+
+@keyframes seal-stamp {
+  0% {
+    transform: scale(2.2) rotate(20deg);
+    opacity: 0;
+  }
+  100% {
+    transform: scale(1) rotate(-8deg);
+    opacity: 1;
+  }
+}
