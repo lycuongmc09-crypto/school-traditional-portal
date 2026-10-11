@@ -28,6 +28,10 @@ export default function Header() {
   };
 
   return (
+    <>
+    <a href="#main-content" className="sr-only focus:not-sr-only focus:fixed focus:left-4 focus:top-4 focus:z-[100] focus:bg-white focus:px-4 focus:py-3 focus:text-[#801424] focus:shadow-lg">
+      Bỏ qua điều hướng, đến nội dung chính
+    </a>
     <header className="sticky top-0 z-50 bg-[#FAF7F2]/95 backdrop-blur-md border-b border-[#E4DCD0] shadow-sm transition-all">
       {/* Scroll Progress Bar */}
       <div
@@ -207,6 +211,6 @@ export default function Header() {
         </div>
       )}
     </header>
+    </>
   );
 }
-

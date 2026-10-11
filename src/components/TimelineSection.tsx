@@ -1,17 +1,18 @@
 import { Milestone } from "@/lib/types";
 import { History } from "lucide-react";
+import Reveal from "./Reveal";
 
 export default function TimelineSection({ milestones }: { milestones: Milestone[] }) {
   return (
     <section id="timeline" className="py-20 md:py-28 border-b border-[#E4DCD0] bg-[#FAF7F2] relative">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         {/* Section Header with Harvard academic typography */}
-        <div className="text-center max-w-3xl mx-auto mb-16 space-y-3">
+        <Reveal className="text-center max-w-3xl mx-auto mb-16 space-y-3">
           <div className="inline-flex items-center gap-2 text-xs font-sans font-bold tracking-[0.25em] uppercase text-[#A51C30]">
             <History className="w-4 h-4 text-[#C29B38]" />
             Biên Niên Sử & Mốc Son Thời Gian
           </div>
-          <h2 className="text-3xl sm:text-4xl lg:text-5xl font-serif font-bold text-[#1A1615]">
+          <h2 className="text-3xl sm:text-4xl lg:text-5xl font-display font-bold text-[#1A1615]">
             Những Mốc Son Lịch Sử Vẻ Vang
           </h2>
           <div className="flex items-center justify-center gap-2 my-3">
@@ -22,7 +23,7 @@ export default function TimelineSection({ milestones }: { milestones: Milestone[
           <p className="text-base sm:text-lg text-[#665E5A] font-sans">
             Hành trình hơn 70 năm kiến tạo tương lai qua những giai đoạn lịch sử hào hùng, từ thời kỳ khói lửa đến kỷ nguyên vươn tầm thế giới.
           </p>
-        </div>
+        </Reveal>
 
         {/* Timeline Spine and Cards */}
         <div className="relative">
@@ -34,8 +35,9 @@ export default function TimelineSection({ milestones }: { milestones: Milestone[
               const isEven = index % 2 === 0;
 
               return (
-                <div
+                <Reveal
                   key={item.id}
+                  delay={(index % 4) + 1}
                   className={`relative flex flex-col md:flex-row items-center ${
                     isEven ? "md:flex-row-reverse" : ""
                   } gap-8`}
@@ -49,7 +51,7 @@ export default function TimelineSection({ milestones }: { milestones: Milestone[
 
                   {/* Content Box */}
                   <div className="w-full md:w-1/2 px-2 md:px-8">
-                    <div className="bg-[#FAF7F2] border border-[#D8C7A5] rounded-sm p-6 sm:p-7 shadow-sm hover:shadow-xl hover:border-[#C29B38] transition-all relative overflow-hidden group">
+                    <div className="bg-[#FAF7F2] border border-[#D8C7A5] rounded-sm p-6 sm:p-7 shadow-sm hover:shadow-xl hover:border-[#C29B38] transition-all relative overflow-hidden group story-card">
                       {/* Top Gold & Crimson Bar */}
                       <div className="absolute top-0 left-0 right-0 h-1 bg-gradient-to-r from-[#A51C30] via-[#DFB15B] to-[#A51C30]"></div>
 
@@ -67,7 +69,7 @@ export default function TimelineSection({ milestones }: { milestones: Milestone[
                         </span>
                       </div>
 
-                      <h3 className="text-xl font-serif font-bold text-[#1A1615] mb-2.5 group-hover:text-[#A51C30] transition-colors leading-snug">
+                      <h3 className="text-xl font-display font-bold text-[#1A1615] mb-2.5 group-hover:text-[#A51C30] transition-colors leading-snug">
                         {item.title}
                       </h3>
 
@@ -95,7 +97,7 @@ export default function TimelineSection({ milestones }: { milestones: Milestone[
 
                   {/* Empty spacer for alignment on desktop */}
                   <div className="hidden md:block md:w-1/2"></div>
-                </div>
+                </Reveal>
               );
             })}
           </div>

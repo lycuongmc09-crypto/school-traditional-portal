@@ -1,16 +1,17 @@
 import { Teacher } from "@/lib/types";
 import { Award, GraduationCap, Medal } from "lucide-react";
+import Reveal from "./Reveal";
 
 export default function TeachersSection({ teachers }: { teachers: Teacher[] }) {
   return (
     <section id="teachers" className="py-20 md:py-28 border-b border-[#E4DCD0] bg-[#FAF7F2] relative">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-        <div className="text-center max-w-3xl mx-auto mb-16 space-y-3">
+        <Reveal className="text-center max-w-3xl mx-auto mb-16 space-y-3">
           <div className="inline-flex items-center gap-2 text-xs font-sans font-bold tracking-[0.25em] uppercase text-[#A51C30]">
             <Award className="w-4 h-4 text-[#C29B38]" />
             Bảng Vàng Danh Sư & Nhà Giáo Mẫu Mực
           </div>
-          <h2 className="text-3xl sm:text-4xl lg:text-5xl font-serif font-bold text-[#1A1615]">
+          <h2 className="text-3xl sm:text-4xl lg:text-5xl font-display font-bold text-[#1A1615]">
             Thầy Cô & Tiên Khắc Khai Phá
           </h2>
           <div className="flex items-center justify-center gap-2 my-3">
@@ -21,13 +22,14 @@ export default function TeachersSection({ teachers }: { teachers: Teacher[] }) {
           <p className="text-base sm:text-lg text-[#665E5A] font-sans">
             Những tấm gương nhà giáo mẫu mực đã dành trọn tâm huyết, trí tuệ để vun đắp nên vị thế và danh tiếng học hiệu qua nhiều thời kỳ.
           </p>
-        </div>
+        </Reveal>
 
         <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
-          {teachers.map((teacher) => (
-            <div
+          {teachers.map((teacher, index) => (
+            <Reveal
               key={teacher.id}
-              className="bg-[#FAF7F2] border border-[#D8C7A5] rounded-sm p-6 sm:p-8 shadow-sm hover:shadow-xl hover:border-[#C29B38] transition-all flex flex-col items-center text-center group relative overflow-hidden"
+              delay={(index % 3) + 1}
+              className="bg-[#FAF7F2] border border-[#D8C7A5] rounded-sm p-6 sm:p-8 shadow-sm hover:shadow-xl hover:border-[#C29B38] transition-all flex flex-col items-center text-center group relative overflow-hidden story-card"
             >
               {/* Top Harvard Gold & Crimson Bar */}
               <div className="absolute top-0 left-0 right-0 h-1 bg-gradient-to-r from-[#801424] via-[#DFB15B] to-[#801424]"></div>
@@ -54,7 +56,7 @@ export default function TeachersSection({ teachers }: { teachers: Teacher[] }) {
                 Giai Đoạn {teacher.period}
               </div>
 
-              <h3 className="text-xl font-serif font-bold text-[#1A1615] group-hover:text-[#A51C30] transition-colors leading-snug">
+              <h3 className="text-xl font-display font-bold text-[#1A1615] group-hover:text-[#A51C30] transition-colors leading-snug">
                 {teacher.name}
               </h3>
 
@@ -66,7 +68,7 @@ export default function TeachersSection({ teachers }: { teachers: Teacher[] }) {
               <p className="text-sm font-serif italic text-[#554D49] leading-relaxed border-t border-[#E4DCD0] pt-4 mt-auto">
                 &ldquo;{teacher.bio}&rdquo;
               </p>
-            </div>
+            </Reveal>
           ))}
         </div>
       </div>

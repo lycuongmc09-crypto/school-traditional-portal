@@ -29,8 +29,8 @@ module.exports = {
         },
       },
       fontFamily: {
-        serif: ['var(--font-cormorant)', 'var(--font-playfair)', 'Playfair Display', 'Merriweather', 'Times New Roman', 'serif'],
-        display: ['var(--font-playfair)', 'var(--font-cormorant)', 'Playfair Display', 'serif'],
+        serif: ['var(--font-playfair)', 'Georgia', 'Cambria', 'Times New Roman', 'serif'],
+        display: ['var(--font-playfair)', 'Georgia', 'serif'],
         sans: ['var(--font-be-vietnam)', 'Be Vietnam Pro', 'Inter', 'system-ui', 'sans-serif'],
       },
       boxShadow: {

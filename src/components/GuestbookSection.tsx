@@ -3,6 +3,7 @@
 import { useState } from "react";
 import { GuestbookEntry } from "@/lib/types";
 import { BookOpen, Send, MessageSquareQuote, CheckCircle2, Sparkles, AlertCircle, Heart } from "lucide-react";
+import Reveal from "./Reveal";
 
 export default function GuestbookSection({ initialEntries }: { initialEntries: GuestbookEntry[] }) {
   const [entries, setEntries] = useState<GuestbookEntry[]>(initialEntries);
@@ -48,23 +49,23 @@ export default function GuestbookSection({ initialEntries }: { initialEntries: G
     <section id="guestbook" className="py-20 md:py-28 border-b border-[#E4DCD0] bg-[#FAF7F2] relative">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         {/* Section Header */}
-        <div className="text-center max-w-3xl mx-auto mb-16 space-y-3">
+        <Reveal className="text-center max-w-3xl mx-auto mb-16 space-y-3">
           <div className="inline-flex items-center gap-2 text-xs font-sans font-bold tracking-[0.2em] uppercase text-[#A51C30]">
             <BookOpen className="w-4 h-4 text-[#C29B38]" />
             Chặng 4: Sổ Vàng Tri Ân Đồng Môn
           </div>
-          <h2 className="text-3xl sm:text-4xl lg:text-5xl font-serif font-bold text-[#1A1615]">
+          <h2 className="text-3xl sm:text-4xl lg:text-5xl font-display font-bold text-[#1A1615]">
             Lưu Bút Các Thế Hệ Thầy Trò
           </h2>
           <div className="w-24 h-0.5 bg-[#C29B38] mx-auto my-3"></div>
           <p className="text-base sm:text-lg text-[#4A4441] font-serif leading-relaxed">
             Hàng ngàn thế hệ học trò đã bay cao bay xa từ mái trường này. Hãy khắc ghi một dòng tâm sự, tri ân thầy cô và gửi gắm ước vọng tới tương lai.
           </p>
-        </div>
+        </Reveal>
 
         <div className="grid grid-cols-1 lg:grid-cols-12 gap-12 items-start">
           {/* Left Form: Write to Guestbook with Wax Seal Micro-interaction */}
-          <div className="lg:col-span-5 bg-white border-2 border-[#E4DCD0] rounded-sm p-6 sm:p-8 shadow-academic relative overflow-hidden">
+          <Reveal className="lg:col-span-5 bg-white border-2 border-[#E4DCD0] rounded-sm p-6 sm:p-8 shadow-academic relative overflow-hidden">
             <div className="absolute top-0 left-0 right-0 h-1.5 bg-gradient-to-r from-[#4E0A14] via-[#C29B38] to-[#A51C30]"></div>
 
             <div className="flex items-center justify-between mb-6">
@@ -209,10 +210,10 @@ export default function GuestbookSection({ initialEntries }: { initialEntries: G
                 {loading ? "Đang ghi dấu vào sổ vàng..." : "Đóng Dấu & Lưu Bút Ngay"}
               </button>
             </form>
-          </div>
+          </Reveal>
 
           {/* Right Feed: Guestbook Entries */}
-          <div className="lg:col-span-7 space-y-6">
+          <Reveal className="lg:col-span-7 space-y-6" delay={1}>
             <div className="flex items-center justify-between pb-3 border-b border-[#E4DCD0]">
               <span className="text-xs font-sans font-bold uppercase tracking-widest text-[#665E5A]">
                 Tổng cộng <strong>{entries.length}</strong> dòng lưu bút đã được số hóa
@@ -259,7 +260,7 @@ export default function GuestbookSection({ initialEntries }: { initialEntries: G
                 </div>
               ))}
             </div>
-          </div>
+          </Reveal>
         </div>
       </div>
     </section>

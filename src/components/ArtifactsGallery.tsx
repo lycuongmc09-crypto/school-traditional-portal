@@ -13,6 +13,7 @@ import {
   Share2,
   FolderOpen,
 } from "lucide-react";
+import Reveal from "./Reveal";
 
 interface ArtifactsGalleryProps {
   initialArtifacts: Artifact[];
@@ -114,12 +115,12 @@ export default function ArtifactsGallery({ initialArtifacts }: ArtifactsGalleryP
     <section id="artifacts" className="py-20 md:py-28 border-b border-[#E5DED6] bg-[#F4EFEA]">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         {/* Section Header */}
-        <div className="text-center max-w-3xl mx-auto mb-14 space-y-3">
+        <Reveal className="text-center max-w-3xl mx-auto mb-14 space-y-3">
           <div className="inline-flex items-center gap-2 text-xs font-sans font-bold tracking-widest uppercase text-[#A51C30]">
             <Compass className="w-4 h-4 text-[#C29B38]" />
             Bảo Tàng & Bộ Sưu Tập Kỷ Vật Số
           </div>
-          <h2 className="text-3xl sm:text-4xl lg:text-5xl font-serif font-bold text-[#1E1E1E]">
+          <h2 className="text-3xl sm:text-4xl lg:text-5xl font-display font-bold text-[#1E1E1E]">
             Hiện Vật & Chứng Nhân Thời Gian
           </h2>
           <div className="w-24 h-0.5 bg-[#C29B38] mx-auto my-3"></div>
@@ -127,7 +128,7 @@ export default function ArtifactsGallery({ initialArtifacts }: ArtifactsGalleryP
             Hàng trăm tài liệu gốc, hiện vật lịch sử, cờ thi đua và kỷ vật thiêng liêng được số hóa
             để gìn giữ trọn vẹn tinh hoa học hiệu.
           </p>
-        </div>
+        </Reveal>
 
         {/* Category Tab Filter */}
         <div className="mb-6 flex items-center gap-2 overflow-x-auto pb-2 scrollbar-none">
@@ -196,13 +197,17 @@ export default function ArtifactsGallery({ initialArtifacts }: ArtifactsGalleryP
 
         {/* Artifacts Grid */}
         <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8">
-          {filteredArtifacts.map((item) => (
-            <div
+          {filteredArtifacts.map((item, index) => (
+            <Reveal
               key={item.id}
+              delay={(index % 3) + 1}
+              className="h-full"
+            >
+            <div
               role="button"
               tabIndex={0}
               aria-label={`Xem chi tiết hiện vật: ${item.title}`}
-              className="bg-[#FAF7F2] border border-[#D8C7A5] rounded-sm overflow-hidden shadow-sm hover:shadow-vitrine-hover hover:border-[#C29B38] transition-all duration-300 group flex flex-col cursor-pointer hover:-translate-y-1 relative focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-[#A51C30]"
+              className="bg-[#FAF7F2] border border-[#D8C7A5] rounded-sm overflow-hidden shadow-sm hover:shadow-vitrine-hover hover:border-[#C29B38] transition-all duration-300 group flex flex-col cursor-pointer hover:-translate-y-1 relative focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-[#A51C30] h-full story-card image-zoom"
               onClick={() => handleOpenArtifact(item)}
               onKeyDown={(e) => {
                 if (e.key === "Enter" || e.key === " ") {
@@ -251,7 +256,7 @@ export default function ArtifactsGallery({ initialArtifacts }: ArtifactsGalleryP
                     <span>{item.room}</span>
                   </div>
 
-                  <h3 className="text-xl font-serif font-bold text-[#1A1615] group-hover:text-[#A51C30] transition-colors leading-snug">
+                  <h3 className="text-xl font-display font-bold text-[#1A1615] group-hover:text-[#A51C30] transition-colors leading-snug">
                     {item.title}
                   </h3>
 
@@ -290,6 +295,7 @@ export default function ArtifactsGallery({ initialArtifacts }: ArtifactsGalleryP
                 </div>
               </div>
             </div>
+            </Reveal>
           ))}
         </div>
 
@@ -336,7 +342,7 @@ export default function ArtifactsGallery({ initialArtifacts }: ArtifactsGalleryP
               </div>
 
               <div>
-                <h3 className="text-2xl sm:text-3xl font-serif font-bold text-[#1E1E1E]">
+                <h3 className="text-2xl sm:text-3xl font-display font-bold text-[#1E1E1E]">
                   {selectedArtifact.title}
                 </h3>
                 <div className="flex flex-wrap gap-4 text-xs font-sans text-[#736E6A] mt-2 pb-4 border-b border-[#E5DED6]">

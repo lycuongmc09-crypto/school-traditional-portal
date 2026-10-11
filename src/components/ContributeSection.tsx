@@ -2,6 +2,7 @@
 
 import { useState } from "react";
 import { HeartHandshake, UploadCloud, CheckCircle2, ShieldCheck, AlertCircle } from "lucide-react";
+import Reveal from "./Reveal";
 
 export default function ContributeSection() {
   const [formData, setFormData] = useState({
@@ -60,7 +61,7 @@ export default function ContributeSection() {
   return (
     <section id="contribute" className="py-20 md:py-28 border-b border-[#E4DCD0] bg-[#F4EEE3]/70 relative">
       <div className="max-w-5xl mx-auto px-4 sm:px-6 lg:px-8">
-        <div className="bg-white border-2 border-[#C29B38] rounded-sm p-8 sm:p-12 shadow-vitrine relative overflow-hidden">
+        <Reveal className="bg-white border-2 border-[#C29B38] rounded-sm p-8 sm:p-12 shadow-vitrine relative overflow-hidden">
           {/* Top academic decorative accent */}
           <div className="absolute top-0 left-0 right-0 h-1.5 bg-gradient-to-r from-[#4E0A14] via-[#C29B38] to-[#801424]"></div>
 
@@ -69,7 +70,7 @@ export default function ContributeSection() {
               <HeartHandshake className="w-4 h-4 text-[#C29B38]" />
               Chặng 5: Đóng Góp Kỷ Vật & Đồng Hành
             </div>
-            <h2 className="text-3xl sm:text-4xl font-serif font-bold text-[#1A1615]">
+            <h2 className="text-3xl sm:text-4xl font-display font-bold text-[#1A1615]">
               Hiến Tặng Tư Liệu & Kỷ Vật Nhà Trường
             </h2>
             <div className="w-20 h-0.5 bg-[#C29B38] mx-auto my-2"></div>
@@ -236,7 +237,7 @@ export default function ContributeSection() {
               </button>
             </div>
           </form>
-        </div>
+        </Reveal>
       </div>
     </section>
   );

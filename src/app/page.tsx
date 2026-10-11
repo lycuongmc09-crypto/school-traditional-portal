@@ -14,7 +14,7 @@ export default async function HomePage() {
   return (
     <div className="flex flex-col min-h-screen">
       <Header />
-      <main className="flex-1">
+      <main id="main-content" className="flex-1">
         <HeroSection />
         <TimelineSection milestones={db.milestones} />
         <ArtifactsGallery initialArtifacts={db.artifacts} />
