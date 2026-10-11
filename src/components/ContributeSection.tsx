@@ -150,16 +150,6 @@ export default function ContributeSection() {
                   className="w-full px-3.5 py-2.5 bg-[#FAF7F2] border border-[#D5CCC1] rounded-sm focus:outline-none focus:ring-2 focus:ring-[#A51C30] focus:border-transparent text-[#1A1615] transition-all"
                 />
               </div>
-            </div>
-                  type="text"
-                  required
-                  placeholder="Ví dụ: Cựu học sinh Trần Minh Tuấn, Tập thể lớp 12A (1982)..."
-                  value={formData.donor}
-                  onChange={(e) => setFormData({ ...formData, donor: e.target.value })}
-                  className="w-full px-3.5 py-2.5 bg-[#FAF7F2] border border-[#D5CCC1] rounded-sm focus:outline-none focus:ring-2 focus:ring-[#A51C30] focus:border-transparent text-[#1A1615] transition-all"
-                />
-              </div>
-
               <div>
                 <label className="block text-xs font-bold uppercase tracking-wider text-[#4A4441] mb-1">
                   Năm lưu hành / Niên đại ước tính
