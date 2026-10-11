@@ -199,8 +199,17 @@ export default function ArtifactsGallery({ initialArtifacts }: ArtifactsGalleryP
           {filteredArtifacts.map((item) => (
             <div
               key={item.id}
-              className="bg-[#FAF7F2] border border-[#D8C7A5] rounded-sm overflow-hidden shadow-sm hover:shadow-vitrine-hover hover:border-[#C29B38] transition-all duration-300 group flex flex-col cursor-pointer hover:-translate-y-1 relative"
+              role="button"
+              tabIndex={0}
+              aria-label={`Xem chi tiết hiện vật: ${item.title}`}
+              className="bg-[#FAF7F2] border border-[#D8C7A5] rounded-sm overflow-hidden shadow-sm hover:shadow-vitrine-hover hover:border-[#C29B38] transition-all duration-300 group flex flex-col cursor-pointer hover:-translate-y-1 relative focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-[#A51C30]"
               onClick={() => handleOpenArtifact(item)}
+              onKeyDown={(e) => {
+                if (e.key === "Enter" || e.key === " ") {
+                  e.preventDefault();
+                  handleOpenArtifact(item);
+                }
+              }}
             >
               {/* Image Frame with museum caption overlay and vitrine lighting */}
               <div className="relative h-64 w-full overflow-hidden bg-[#2A050A]">

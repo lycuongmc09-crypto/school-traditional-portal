@@ -118,13 +118,16 @@ export default function GuestbookSection({ initialEntries }: { initialEntries: G
 
             <form onSubmit={handleSubmit} className="space-y-4 font-sans text-sm">
               <div>
-                <label className="block text-xs font-bold uppercase tracking-wider text-[#4A4441] mb-1">
+                <label htmlFor="gb-name" className="block text-xs font-bold uppercase tracking-wider text-[#4A4441] mb-1">
                   Họ và tên quý vị / cựu học sinh <span className="text-[#A51C30]">*</span>
                 </label>
                 <input
+                  id="gb-name"
+                  name="name"
                   type="text"
                   required
-                  placeholder="Ví dụ: GS. Nguyễn Văn An, Thạc sĩ Lê Hà Linh..."
+                  autoComplete="name"
+                  placeholder="Ví dụ: GS. Nguyễn Văn An, Thạc sĩ Lê Hà Linh…"
                   value={formData.name}
                   onChange={(e) => setFormData({ ...formData, name: e.target.value })}
                   className="w-full px-3.5 py-2.5 bg-[#FAF7F2] border border-[#D5CCC1] rounded-sm focus:outline-none focus:ring-2 focus:ring-[#A51C30] focus:border-transparent text-[#1A1615] transition-all"
@@ -133,12 +136,14 @@ export default function GuestbookSection({ initialEntries }: { initialEntries: G
 
               <div className="grid grid-cols-1 sm:grid-cols-2 gap-4">
                 <div>
-                  <label className="block text-xs font-bold uppercase tracking-wider text-[#4A4441] mb-1">
+                  <label htmlFor="gb-class" className="block text-xs font-bold uppercase tracking-wider text-[#4A4441] mb-1">
                     Niên khóa / Lớp học
                   </label>
                   <input
+                    id="gb-class"
+                    name="alumniClass"
                     type="text"
-                    placeholder="Ví dụ: Khóa 1998 - 2001"
+                    placeholder="Ví dụ: Khóa 1998 - 2001…"
                     value={formData.alumniClass}
                     onChange={(e) => setFormData({ ...formData, alumniClass: e.target.value })}
                     className="w-full px-3.5 py-2.5 bg-[#FAF7F2] border border-[#D5CCC1] rounded-sm focus:outline-none focus:ring-2 focus:ring-[#A51C30] focus:border-transparent text-[#1A1615] transition-all"
@@ -146,12 +151,14 @@ export default function GuestbookSection({ initialEntries }: { initialEntries: G
                 </div>
 
                 <div>
-                  <label className="block text-xs font-bold uppercase tracking-wider text-[#4A4441] mb-1">
+                  <label htmlFor="gb-role" className="block text-xs font-bold uppercase tracking-wider text-[#4A4441] mb-1">
                     Đơn vị công tác / Vị trí
                   </label>
                   <input
+                    id="gb-role"
+                    name="role"
                     type="text"
-                    placeholder="Ví dụ: Cựu sinh viên, Kỹ sư..."
+                    placeholder="Ví dụ: Cựu sinh viên, Kỹ sư…"
                     value={formData.role}
                     onChange={(e) => setFormData({ ...formData, role: e.target.value })}
                     className="w-full px-3.5 py-2.5 bg-[#FAF7F2] border border-[#D5CCC1] rounded-sm focus:outline-none focus:ring-2 focus:ring-[#A51C30] focus:border-transparent text-[#1A1615] transition-all"
@@ -161,12 +168,14 @@ export default function GuestbookSection({ initialEntries }: { initialEntries: G
 
               <div>
                 <div className="flex justify-between items-center mb-1">
-                  <label className="block text-xs font-bold uppercase tracking-wider text-[#4A4441]">
+                  <label htmlFor="gb-message" className="block text-xs font-bold uppercase tracking-wider text-[#4A4441]">
                     Nội dung lưu bút / Lời tri ân <span className="text-[#A51C30]">*</span>
                   </label>
                   <span className="text-[11px] text-[#8C827A]">{formData.message.length} ký tự</span>
                 </div>
                 <textarea
+                  id="gb-message"
+                  name="message"
                   rows={4}
                   required
                   placeholder="Chia sẻ kỷ niệm thời áo trắng dưới mái trường, lời tri ấn thầy cô hoặc lời chúc tới các thế hệ đàn em mai sau..."

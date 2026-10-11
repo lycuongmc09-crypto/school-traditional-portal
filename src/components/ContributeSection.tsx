@@ -119,13 +119,15 @@ export default function ContributeSection() {
           <form onSubmit={handleSubmit} className="space-y-6 font-sans text-sm">
             <div className="grid grid-cols-1 sm:grid-cols-2 gap-6">
               <div>
-                <label className="block text-xs font-bold uppercase tracking-wider text-[#4A4441] mb-1">
+                <label htmlFor="ct-title" className="block text-xs font-bold uppercase tracking-wider text-[#4A4441] mb-1">
                   Tên hiện vật / Tên tài liệu kỷ niệm <span className="text-[#A51C30]">*</span>
                 </label>
                 <input
+                  id="ct-title"
+                  name="title"
                   type="text"
                   required
-                  placeholder="Ví dụ: Bằng khen học sinh giỏi năm 1975, Huy hiệu đoàn..."
+                  placeholder="Ví dụ: Bằng khen học sinh giỏi năm 1975, Huy hiệu đoàn…"
                   value={formData.title}
                   onChange={(e) => setFormData({ ...formData, title: e.target.value })}
                   className="w-full px-3.5 py-2.5 bg-[#FAF7F2] border border-[#D5CCC1] rounded-sm focus:outline-none focus:ring-2 focus:ring-[#A51C30] focus:border-transparent text-[#1A1615] transition-all"
@@ -133,10 +135,22 @@ export default function ContributeSection() {
               </div>
 
               <div>
-                <label className="block text-xs font-bold uppercase tracking-wider text-[#4A4441] mb-1">
+                <label htmlFor="ct-donor" className="block text-xs font-bold uppercase tracking-wider text-[#4A4441] mb-1">
                   Người trao tặng / Khóa học / Đơn vị <span className="text-[#A51C30]">*</span>
                 </label>
                 <input
+                  id="ct-donor"
+                  name="donor"
+                  type="text"
+                  required
+                  autoComplete="name"
+                  placeholder="Ví dụ: Cựu học sinh Nguyễn Thu Hằng (Lớp 12A 1995)…"
+                  value={formData.donor}
+                  onChange={(e) => setFormData({ ...formData, donor: e.target.value })}
+                  className="w-full px-3.5 py-2.5 bg-[#FAF7F2] border border-[#D5CCC1] rounded-sm focus:outline-none focus:ring-2 focus:ring-[#A51C30] focus:border-transparent text-[#1A1615] transition-all"
+                />
+              </div>
+            </div>
                   type="text"
                   required
                   placeholder="Ví dụ: Cựu học sinh Trần Minh Tuấn, Tập thể lớp 12A (1982)..."
