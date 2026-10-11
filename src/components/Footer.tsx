@@ -1,5 +1,5 @@
 import Link from "next/link";
-import { ArrowUp, Mail, MapPin, Phone } from "lucide-react";
+import { ArrowUp, MapPin } from "lucide-react";
 import AcademicSeal from "./AcademicSeal";
 
 export default function Footer() {
@@ -17,17 +17,17 @@ export default function Footer() {
                   Di Sản & Truyền Thống Học Đường
                 </div>
                 <div className="text-lg font-serif font-bold text-[#FAF7F2]">
-                  TRƯỜNG THPT CHUYÊN LÊ QUÝ ĐÔN
+                  TRƯỜNG THPT HOÀNG VĂN THỤ
                 </div>
               </div>
             </div>
 
             <p className="text-sm font-sans text-[#A89E94] leading-relaxed max-w-sm">
-              Không gian số lưu trữ và tri ân hơn 70 năm vẻ vang của mái trường (1956 - 2026). Nơi kết nối trái tim của các thế hệ học sinh, giáo viên trên khắp mọi miền Tổ quốc và thế giới.
+              Không gian số lưu giữ những dấu mốc, thành tích và câu chuyện của thầy trò Trường THPT Hoàng Văn Thụ, Vàng Danh, Quảng Ninh.
             </p>
 
             <div className="pt-2 text-xs text-[#DFB15B] font-serif italic tracking-wide">
-              &ldquo;Veritas et Scientia • Chân lý và Tri thức trường tồn&rdquo;
+              &ldquo;Tự hào truyền thống • Vững bước tương lai&rdquo;
             </div>
           </div>
 
@@ -39,27 +39,22 @@ export default function Footer() {
             <ul className="space-y-2 text-sm text-[#A89E94]">
               <li>
                 <Link href="#timeline" className="hover:text-[#DFB15B] transition-colors">
-                  • Biên niên sử 1956 - 2026
+                  • Lịch sử nhà trường từ năm 1979
                 </Link>
               </li>
               <li>
-                <Link href="#artifacts" className="hover:text-[#DFB15B] transition-colors">
-                  • Bảo tàng hiện vật & kỷ vật
+                <Link href="#tribute" className="hover:text-[#DFB15B] transition-colors">
+                  • Tiểu sử đồng chí Hoàng Văn Thụ
                 </Link>
               </li>
               <li>
                 <Link href="#teachers" className="hover:text-[#DFB15B] transition-colors">
-                  • Bảng vàng danh sư tri ân
+                  • Thành tích nhà trường
                 </Link>
               </li>
               <li>
-                <Link href="#guestbook" className="hover:text-[#DFB15B] transition-colors">
-                  • Sổ vàng đồng môn trực tuyến
-                </Link>
-              </li>
-              <li>
-                <Link href="#contribute" className="hover:text-[#DFB15B] transition-colors">
-                  • Hiến tặng kỷ vật & tư liệu
+                <Link href="#media" className="hover:text-[#DFB15B] transition-colors">
+                  • Video & tư liệu học tập
                 </Link>
               </li>
             </ul>
@@ -73,15 +68,7 @@ export default function Footer() {
             <div className="space-y-2.5 text-sm text-[#A89E94]">
               <div className="flex items-start gap-2.5">
                 <MapPin className="w-4 h-4 text-[#DFB15B] shrink-0 mt-0.5" />
-                <span>Phòng Truyền Thống, Tầng 3 Nhà Hiệu Bộ, Trường THPT Chuyên Lê Quý Đôn</span>
-              </div>
-              <div className="flex items-center gap-2.5">
-                <Phone className="w-4 h-4 text-[#DFB15B] shrink-0" />
-                <span>(024) 3856.7899 • Ban Lưu Trữ Số</span>
-              </div>
-              <div className="flex items-center gap-2.5">
-                <Mail className="w-4 h-4 text-[#DFB15B] shrink-0" />
-                <span>phongtruyenthong@lequydon.edu.vn</span>
+                <span>Tổ 1, Khu phố Vàng Danh 3, Phường Vàng Danh, tỉnh Quảng Ninh</span>
               </div>
             </div>
           </div>
@@ -90,7 +77,7 @@ export default function Footer() {
         {/* Bottom Bar */}
         <div className="mt-12 pt-6 border-t border-[#38322F] flex flex-col sm:flex-row items-center justify-between text-xs text-[#786E68] gap-4 font-sans">
           <div>
-            © 1956 - 2026 Trường THPT Chuyên Lê Quý Đôn. Chuẩn thiết kế Harvard University Academic Editorial & Museum Showcase.
+            © Trường THPT Hoàng Văn Thụ, Vàng Danh, Quảng Ninh. Website tư liệu đang được hoàn thiện cùng nhà trường.
           </div>
           <Link
             href="#"

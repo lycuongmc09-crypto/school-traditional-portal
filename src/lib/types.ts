@@ -97,6 +97,16 @@ export interface Teacher {
   imageUrl: string;
 }
 
+export interface SchoolMedia {
+  id: string;
+  type: "image" | "video";
+  title: string;
+  description: string;
+  src: string;
+  year: string;
+  featured: boolean;
+}
+
 export interface SchoolDatabase {
   schoolInfo: {
     name: string;
@@ -110,6 +120,7 @@ export interface SchoolDatabase {
   artifacts: Artifact[];
   guestbook: GuestbookEntry[];
   teachers: Teacher[];
+  media: SchoolMedia[];
 }
 
 export interface ArtifactQueryParams {

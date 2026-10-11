@@ -17,8 +17,8 @@ const playfair = Playfair_Display({
 });
 
 export const metadata: Metadata = {
-  title: "Phòng Truyền Thống & Di Sản Học Thuật - Trường THPT Chuyên Lê Quý Đôn",
-  description: "Cổng số hóa không gian truyền thống, hiện vật lịch sử và sổ vàng lưu bút các thế hệ học sinh trường THPT Chuyên Lê Quý Đôn theo phong cách hàn lâm Harvard.",
+  title: "Trường THPT Hoàng Văn Thụ | Vàng Danh, Quảng Ninh",
+  description: "Không gian tư liệu số về lịch sử, thành tích và các thế hệ thầy trò Trường THPT Hoàng Văn Thụ, Vàng Danh, Quảng Ninh.",
 };
 
 export default function RootLayout({

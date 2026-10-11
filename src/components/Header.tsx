@@ -1,7 +1,7 @@
 "use client";
 
 import Link from "next/link";
-import { BookOpen, Award, Compass, HeartHandshake, History, Menu, X, Landmark, Type } from "lucide-react";
+import { BookOpen, Award, History, Menu, X, Landmark, Type, Film } from "lucide-react";
 import { useState, useEffect } from "react";
 import AcademicSeal from "./AcademicSeal";
 
@@ -32,35 +32,35 @@ export default function Header() {
     <a href="#main-content" className="sr-only focus:not-sr-only focus:fixed focus:left-4 focus:top-4 focus:z-[100] focus:bg-white focus:px-4 focus:py-3 focus:text-[#801424] focus:shadow-lg">
       Bỏ qua điều hướng, đến nội dung chính
     </a>
-    <header className="sticky top-0 z-50 bg-[#FAF7F2]/95 backdrop-blur-md border-b border-[#E4DCD0] shadow-sm transition-all">
+    <header className="sticky top-0 z-50 bg-white/95 backdrop-blur-xl border-b border-slate-200 shadow-sm transition-all">
       {/* Scroll Progress Bar */}
       <div
-        className="h-1 bg-gradient-to-r from-[#801424] via-[#C29B38] to-[#A51C30] transition-all duration-150"
+        className="h-1 bg-gradient-to-r from-blue-950 via-blue-600 to-sky-400 transition-all duration-150"
         style={{ width: `${scrollProgress}%` }}
         aria-hidden="true"
       />
 
       {/* Top Banner: Harvard style motto ribbon */}
-      <div className="bg-[#4E0A14] text-[#F5EFE6] text-[11px] py-1.5 px-4 tracking-[0.2em] text-center uppercase font-sans border-b border-[#3B070E] flex items-center justify-between gap-3">
+      <div className="bg-gradient-to-r from-[#173B68] via-[#245A91] to-[#173B68] text-white text-[11px] py-1.5 px-4 tracking-[0.12em] text-center uppercase font-sans border-b border-blue-950/40 flex items-center justify-between gap-3">
         <div className="hidden sm:flex items-center gap-2 text-[#DFB15B] text-[10px]">
-          <span className="w-1.5 h-1.5 rounded-full bg-[#DFB15B] shadow-[0_0_6px_#DFB15B]"></span>
-          <span>EST. 1956 • HÀNH TRÌNH 70 NĂM TRI THỨC</span>
+          <span className="w-1.5 h-1.5 rounded-full bg-sky-200 shadow-[0_0_6px_#bae6fd]"></span>
+          <span>THÀNH LẬP PHÂN HIỆU NĂM 1979</span>
         </div>
 
         <div className="flex-1 text-center font-semibold text-[#EFE8DA] tracking-wider text-[11px] sm:text-xs">
-          VERITAS ET SCIENTIA • PHÒNG TRUYỀN THỐNG TRƯỜNG THPT CHUYÊN LÊ QUÝ ĐÔN
+          TỰ HÀO TRUYỀN THỐNG • VỮNG BƯỚC TƯƠNG LAI
         </div>
 
         {/* Accessibility Font Size Toggle for Elderly Teachers & Alumni */}
         <div className="flex items-center gap-1 bg-[#36060E] px-2 py-0.5 rounded border border-[#6E0D1B]">
-          <Type className="w-3 h-3 text-[#DFB15B] mr-0.5" />
+          <Type className="w-3 h-3 text-sky-200 mr-0.5" />
           <span className="text-[10px] text-[#D8C7A5] font-sans mr-1 hidden md:inline">Cỡ chữ:</span>
           <button
             onClick={() => changeFontSize("normal")}
             className={`px-1.5 py-0.5 text-[10px] font-bold rounded transition-colors ${
               fontSize === "normal"
-                ? "bg-[#C29B38] text-[#1A1615]"
-                : "text-[#EFE8DA] hover:text-[#DFB15B]"
+                ? "bg-sky-200 text-blue-950"
+                : "text-white hover:text-sky-200"
             }`}
             title="Cỡ chữ tiêu chuẩn"
             aria-label="Cỡ chữ bình thường"
@@ -71,8 +71,8 @@ export default function Header() {
             onClick={() => changeFontSize("large")}
             className={`px-1.5 py-0.5 text-[11px] font-bold rounded transition-colors ${
               fontSize === "large"
-                ? "bg-[#C29B38] text-[#1A1615]"
-                : "text-[#EFE8DA] hover:text-[#DFB15B]"
+                ? "bg-sky-200 text-blue-950"
+                : "text-white hover:text-sky-200"
             }`}
             title="Cỡ chữ lớn (Thầy cô lớn tuổi)"
             aria-label="Cỡ chữ lớn"
@@ -83,8 +83,8 @@ export default function Header() {
             onClick={() => changeFontSize("xlarge")}
             className={`px-1.5 py-0.5 text-[12px] font-bold rounded transition-colors ${
               fontSize === "xlarge"
-                ? "bg-[#C29B38] text-[#1A1615]"
-                : "text-[#EFE8DA] hover:text-[#DFB15B]"
+                ? "bg-sky-200 text-blue-950"
+                : "text-white hover:text-sky-200"
             }`}
             title="Cỡ chữ rất lớn"
             aria-label="Cỡ chữ rất lớn"
@@ -102,61 +102,54 @@ export default function Header() {
               <AcademicSeal size={48} variant="shield" className="drop-shadow-sm" />
             </div>
             <div>
-              <div className="text-[10px] font-sans tracking-[0.25em] text-[#A51C30] uppercase font-bold flex items-center gap-1.5">
-                <Landmark className="w-3 h-3 text-[#C29B38]" />
-                Không Gian Di Sản & Bảo Tàng Số
+              <div className="text-[10px] font-sans tracking-[0.18em] text-blue-800 uppercase font-bold flex items-center gap-1.5">
+                <Landmark className="w-3 h-3 text-blue-700" />
+                Vàng Danh · Uông Bí · Quảng Ninh
               </div>
-              <div className="text-lg md:text-xl font-serif font-bold tracking-tight text-[#1A1615] group-hover:text-[#A51C30] transition-colors">
-                THPT CHUYÊN LÊ QUÝ ĐÔN
+              <div className="text-lg md:text-xl font-serif font-bold tracking-tight text-[#1A1615] group-hover:text-blue-800 transition-colors">
+                THPT HOÀNG VĂN THỤ
               </div>
             </div>
           </Link>
 
           {/* Desktop Navigation: 5-Stage Chronological Narrative */}
-          <nav className="hidden lg:flex items-center space-x-1 font-sans text-[13px] font-medium" aria-label="Thanh điều hướng chính">
+          <nav className="hidden lg:flex items-center gap-1 font-sans text-[13px] font-medium" aria-label="Thanh điều hướng chính">
             <Link
-              href="#timeline"
-              className="px-3 py-2 text-[#4A4441] hover:text-[#A51C30] hover:bg-[#F2ECE1] rounded-sm transition-colors flex items-center gap-1.5 tracking-wide"
+              href="#tribute"
+              className="px-3 py-2 text-[#334155] hover:text-blue-800 hover:bg-blue-50 rounded-sm transition-colors flex items-center gap-1.5 tracking-wide"
             >
-              <History className="w-4 h-4 text-[#A51C30]" />
-              1. Biên Niên Sử
+              <BookOpen className="w-4 h-4 text-blue-700" />
+              Tiểu sử Hoàng Văn Thụ
             </Link>
             <Link
-              href="#artifacts"
-              className="px-3 py-2 text-[#4A4441] hover:text-[#A51C30] hover:bg-[#F2ECE1] rounded-sm transition-colors flex items-center gap-1.5 tracking-wide"
+              href="#timeline"
+              className="px-3 py-2 text-[#334155] hover:text-blue-800 hover:bg-blue-50 rounded-sm transition-colors flex items-center gap-1.5 tracking-wide"
             >
-              <Compass className="w-4 h-4 text-[#A51C30]" />
-              2. Hiện Vật Tiêu Biểu
+              <History className="w-4 h-4 text-blue-700" />
+              Lịch sử nhà trường
+            </Link>
+            <Link
+              href="#media"
+              className="px-3 py-2 text-[#334155] hover:text-blue-800 hover:bg-blue-50 rounded-sm transition-colors flex items-center gap-1.5 tracking-wide"
+            >
+              <Film className="w-4 h-4 text-blue-700" />
+              Video & tư liệu
             </Link>
             <Link
               href="#teachers"
-              className="px-3 py-2 text-[#4A4441] hover:text-[#A51C30] hover:bg-[#F2ECE1] rounded-sm transition-colors flex items-center gap-1.5 tracking-wide"
+              className="px-3 py-2 text-[#334155] hover:text-blue-800 hover:bg-blue-50 rounded-sm transition-colors flex items-center gap-1.5 tracking-wide"
             >
-              <Award className="w-4 h-4 text-[#A51C30]" />
-              3. Thầy Cô Khai Phá
-            </Link>
-            <Link
-              href="#guestbook"
-              className="px-3 py-2 text-[#4A4441] hover:text-[#A51C30] hover:bg-[#F2ECE1] rounded-sm transition-colors flex items-center gap-1.5 tracking-wide"
-            >
-              <BookOpen className="w-4 h-4 text-[#A51C30]" />
-              4. Sổ Vàng Lưu Bút
+              <Award className="w-4 h-4 text-blue-700" />
+              Thế hệ thầy cô
             </Link>
 
-            <Link
-              href="#contribute"
-              className="ml-2 px-3.5 py-2 bg-gradient-to-r from-[#801424] to-[#A51C30] text-[#FAF7F2] rounded-sm text-xs font-semibold tracking-wider uppercase hover:from-[#4E0A14] hover:to-[#801424] transition-all shadow-sm flex items-center gap-1.5 border border-[#C29B38]/50"
-            >
-              <HeartHandshake className="w-4 h-4 text-[#DFB15B]" />
-              5. Đóng Góp Kỷ Vật
-            </Link>
           </nav>
 
           {/* Mobile menu button */}
           <div className="lg:hidden flex items-center gap-2">
             <button
               onClick={() => setMobileMenuOpen(!mobileMenuOpen)}
-              className="p-2 text-[#4A4441] hover:text-[#1A1615] focus:outline-none focus:ring-2 focus:ring-[#A51C30] rounded"
+              className="p-2 text-[#4A4744] hover:text-blue-900 focus:outline-none focus:ring-2 focus:ring-blue-700 rounded"
               aria-label="Mở danh mục điều hướng"
             >
               {mobileMenuOpen ? <X className="w-6 h-6" /> : <Menu className="w-6 h-6" />}
@@ -167,46 +160,38 @@ export default function Header() {
 
       {/* Mobile menu dropdown */}
       {mobileMenuOpen && (
-        <div className="lg:hidden bg-[#FAF7F2] border-b border-[#E4DCD0] px-4 pt-3 pb-6 space-y-2.5 shadow-lg">
+        <div className="lg:hidden bg-white border-b border-slate-200 px-4 pt-3 pb-6 space-y-2.5 shadow-lg">
+          <Link
+            href="#tribute"
+            onClick={() => setMobileMenuOpen(false)}
+            className="flex items-center gap-2.5 px-3 py-2.5 text-base font-medium text-[#1A1615] hover:bg-blue-50 rounded border-b border-slate-200"
+          >
+            <BookOpen className="w-5 h-5 text-blue-700" />
+            Tiểu sử đồng chí Hoàng Văn Thụ
+          </Link>
           <Link
             href="#timeline"
             onClick={() => setMobileMenuOpen(false)}
             className="flex items-center gap-2.5 px-3 py-2.5 text-base font-medium text-[#1A1615] hover:bg-[#F2ECE1] rounded border-b border-[#E4DCD0]"
           >
-            <History className="w-5 h-5 text-[#A51C30]" />
-            1. Biên Niên Sử (Mốc Son Lịch Sử)
-          </Link>
-          <Link
-            href="#artifacts"
-            onClick={() => setMobileMenuOpen(false)}
-            className="flex items-center gap-2.5 px-3 py-2.5 text-base font-medium text-[#1A1615] hover:bg-[#F2ECE1] rounded border-b border-[#E4DCD0]"
-          >
-            <Compass className="w-5 h-5 text-[#A51C30]" />
-            2. Hiện Vật Tiêu Biểu & Kỷ Vật
+            <History className="w-5 h-5 text-blue-700" />
+            Lịch sử nhà trường
           </Link>
           <Link
             href="#teachers"
             onClick={() => setMobileMenuOpen(false)}
             className="flex items-center gap-2.5 px-3 py-2.5 text-base font-medium text-[#1A1615] hover:bg-[#F2ECE1] rounded border-b border-[#E4DCD0]"
           >
-            <Award className="w-5 h-5 text-[#A51C30]" />
-            3. Thầy Cô Khai Phá & Danh Sư
+            <Award className="w-5 h-5 text-blue-700" />
+            Thế hệ thầy cô
           </Link>
           <Link
-            href="#guestbook"
+            href="#media"
             onClick={() => setMobileMenuOpen(false)}
-            className="flex items-center gap-2.5 px-3 py-2.5 text-base font-medium text-[#1A1615] hover:bg-[#F2ECE1] rounded border-b border-[#E4DCD0]"
+            className="flex items-center justify-center gap-2 px-4 py-3 text-base font-bold bg-blue-900 text-white text-center rounded shadow-sm font-sans tracking-wider uppercase mt-3"
           >
-            <BookOpen className="w-5 h-5 text-[#A51C30]" />
-            4. Sổ Vàng Lưu Bút Đồng Môn
-          </Link>
-          <Link
-            href="#contribute"
-            onClick={() => setMobileMenuOpen(false)}
-            className="flex items-center justify-center gap-2 px-4 py-3 text-base font-bold bg-[#A51C30] text-[#FAF7F2] text-center rounded shadow-sm font-serif tracking-wider uppercase mt-3"
-          >
-            <HeartHandshake className="w-5 h-5 text-[#DFB15B]" />
-            5. Hiến Tặng Kỷ Vật Trực Tuyến
+            <Film className="w-5 h-5 text-blue-100" />
+            Video & tư liệu
           </Link>
         </div>
       )}

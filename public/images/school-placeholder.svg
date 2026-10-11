@@ -1,0 +1,19 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 700" role="img" aria-labelledby="title desc">
+  <title id="title">Ảnh tư liệu Trường THPT Hoàng Văn Thụ</title>
+  <desc id="desc">Khung ảnh đang chờ nhà trường bổ sung ảnh tư liệu chính thức.</desc>
+  <defs>
+    <linearGradient id="sky" x2="0" y2="1"><stop stop-color="#dbeafe"/><stop offset="1" stop-color="#f8fafc"/></linearGradient>
+    <linearGradient id="ground" x2="0" y2="1"><stop stop-color="#86a878"/><stop offset="1" stop-color="#416747"/></linearGradient>
+  </defs>
+  <rect width="1200" height="700" fill="url(#sky)"/>
+  <circle cx="960" cy="130" r="58" fill="#f4cd77" opacity=".75"/>
+  <path d="M0 470 Q240 370 480 455 T960 430 T1200 450 V700 H0Z" fill="url(#ground)"/>
+  <g fill="#f7f4ed" stroke="#d5c5a1" stroke-width="5">
+    <path d="M250 315h700v245H250z"/><path d="m205 320 395-155 395 155z" fill="#385c8c"/>
+    <path d="M510 400h180v160H510z" fill="#54769c"/>
+  </g>
+  <g fill="#54769c"><path d="M315 370h100v85H315zM445 370h42v85h-42zM713 370h42v85h-42zM785 370h100v85H785z"/></g>
+  <path d="M0 560h1200v140H0z" fill="#294d35" opacity=".42"/>
+  <text x="600" y="615" text-anchor="middle" fill="#fff" font-family="Arial,sans-serif" font-size="25" font-weight="700" letter-spacing="3">ẢNH TRƯỜNG SẼ ĐƯỢC CẬP NHẬT</text>
+  <text x="600" y="653" text-anchor="middle" fill="#edf3e9" font-family="Arial,sans-serif" font-size="18">Tư liệu chính thức do nhà trường cung cấp</text>
+</svg>
