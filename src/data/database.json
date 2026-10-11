@@ -29,6 +29,7 @@
     {"id":"mindmap-quang-ninh","type":"image","title":"Sơ đồ tư duy Lịch sử địa phương Quảng Ninh","description":"Tư liệu học tập từ bộ tài liệu lịch sử địa phương do giáo viên cung cấp.","src":"/quang-ninh-history-mindmap.png","year":"Tư liệu học tập","featured":true},
     {"id":"achievements-2025-2026","type":"video","title":"Thành tích nhà trường năm học 2025–2026","description":"Video chính thức sẽ được bổ sung khi nhà trường cung cấp tư liệu.","src":"","year":"2025–2026","featured":true},
     {"id":"achievements-2024-2025","type":"video","title":"Thành tích nhà trường năm học 2024–2025","description":"Video chính thức sẽ được bổ sung khi nhà trường cung cấp tư liệu.","src":"","year":"2024–2025","featured":false},
-    {"id":"achievements-2020-2025","type":"video","title":"Dấu ấn giáo dục giai đoạn 2020–2025","description":"Video chính thức sẽ được bổ sung khi nhà trường cung cấp tư liệu.","src":"","year":"2020–2025","featured":false}
+    {"id":"achievements-2020-2025","type":"video","title":"Dấu ấn giáo dục giai đoạn 2020–2025","description":"Video chính thức sẽ được bổ sung khi nhà trường cung cấp tư liệu.","src":"","year":"2020–2025","featured":false},
+    {"id":"school-history-archive","type":"image","title":"Tư liệu Lịch sử địa phương Quảng Ninh","description":"Sơ đồ học tập khái quát các chặng lịch sử và di sản tiêu biểu của tỉnh.","src":"/quang-ninh-history-mindmap.png","year":"Kho tư liệu","featured":false}
   ]
 }

@@ -15,9 +15,9 @@ export default async function HomePage() {
       <Header />
       <main id="main-content" className="flex-1">
         <HeroSection />
+        <MediaSection media={db.media} />
         <TimelineSection milestones={db.milestones} />
         <TributeSection />
-        <MediaSection media={db.media} />
         <TeachersSection teachers={db.teachers} />
       </main>
       <Footer />

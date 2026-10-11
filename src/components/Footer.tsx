@@ -48,8 +48,8 @@ export default function Footer() {
                 </Link>
               </li>
               <li>
-                <Link href="#teachers" className="hover:text-[#DFB15B] transition-colors">
-                  • Thành tích nhà trường
+                <Link href="#media" className="hover:text-[#DFB15B] transition-colors">
+                  • Tin mới & thành tích
                 </Link>
               </li>
               <li>

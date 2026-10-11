@@ -1,7 +1,7 @@
 "use client";
 
 import Link from "next/link";
-import { BookOpen, Award, History, Menu, X, Landmark, Type, Film } from "lucide-react";
+import { Award, History, Menu, X, Landmark, Type, Film } from "lucide-react";
 import { useState, useEffect } from "react";
 import AcademicSeal from "./AcademicSeal";
 
@@ -115,18 +115,11 @@ export default function Header() {
           {/* Desktop Navigation: 5-Stage Chronological Narrative */}
           <nav className="hidden lg:flex items-center gap-1 font-sans text-[13px] font-medium" aria-label="Thanh điều hướng chính">
             <Link
-              href="#tribute"
-              className="px-3 py-2 text-[#334155] hover:text-blue-800 hover:bg-blue-50 rounded-sm transition-colors flex items-center gap-1.5 tracking-wide"
-            >
-              <BookOpen className="w-4 h-4 text-blue-700" />
-              Tiểu sử Hoàng Văn Thụ
-            </Link>
-            <Link
               href="#timeline"
               className="px-3 py-2 text-[#334155] hover:text-blue-800 hover:bg-blue-50 rounded-sm transition-colors flex items-center gap-1.5 tracking-wide"
             >
               <History className="w-4 h-4 text-blue-700" />
-              Lịch sử nhà trường
+              Lịch sử
             </Link>
             <Link
               href="#media"
@@ -142,7 +135,6 @@ export default function Header() {
               <Award className="w-4 h-4 text-blue-700" />
               Thế hệ thầy cô
             </Link>
-
           </nav>
 
           {/* Mobile menu button */}
@@ -161,14 +153,6 @@ export default function Header() {
       {/* Mobile menu dropdown */}
       {mobileMenuOpen && (
         <div className="lg:hidden bg-white border-b border-slate-200 px-4 pt-3 pb-6 space-y-2.5 shadow-lg">
-          <Link
-            href="#tribute"
-            onClick={() => setMobileMenuOpen(false)}
-            className="flex items-center gap-2.5 px-3 py-2.5 text-base font-medium text-[#1A1615] hover:bg-blue-50 rounded border-b border-slate-200"
-          >
-            <BookOpen className="w-5 h-5 text-blue-700" />
-            Tiểu sử đồng chí Hoàng Văn Thụ
-          </Link>
           <Link
             href="#timeline"
             onClick={() => setMobileMenuOpen(false)}
